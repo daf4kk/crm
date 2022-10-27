@@ -31,6 +31,7 @@ const AddressPage = () => {
         <PageContainer>
         <div className='address-page'>
             <h1 className='title'>Поиск адресов</h1>
+            <br></br>
             <p className = 'sub-title'>Введите интересующий вас адрес</p>
 
             <form onSubmit={findData}>
@@ -43,10 +44,11 @@ const AddressPage = () => {
 
             <div className='response-container'>
                 <h1>Адреса</h1>
-                {isError && <h1>Произошла ошибка на сервере</h1>}
-                {isLoading && <h1>Загрузка...</h1>}
-                {addresses?.length === 0 && <h1>Ничего не найдено</h1>}
+                
                 <ul>
+                    {isError && <h1>Произошла ошибка на сервере</h1>}
+                    {isLoading && <h1>Загрузка...</h1>}
+                    {addresses?.length === 0 && <h1>Ничего не найдено</h1>}
                     {addresses?.map((item:IAddress, id) => {
                         return (
                             <li className='response-item' key = {id}>
@@ -54,6 +56,20 @@ const AddressPage = () => {
                             </li>
                         )
                     })}     
+                    {/* <li className='response-item'>Мама мама мама мама</li>
+                    <li className='response-item'>Мама мама мама мама</li>
+                    <li className='response-item'>Мама мама мама мама</li>
+                    <li className='response-item'>Мама мама мама мама</li>
+                    <li className='response-item'>Мама мама мама мама</li>
+                    <li className='response-item'>Мама мама мама мама</li>
+                    <li className='response-item'>Мама мама мама мама</li>
+                    <li className='response-item'>Мама мама мама мама</li>
+                    <li className='response-item'>Мама мама мама мама</li>
+                    <li className='response-item'>Мама мама мама мама</li>
+                    <li className='response-item'>Мама мама мама мама</li>
+                    <li className='response-item'>Мама мама мама мама</li>
+                    <li className='response-item'>Мама мама мама мама</li>
+                    <li className='response-item'>Мама мама мама мама</li> */}
                 </ul>
             </div>
 

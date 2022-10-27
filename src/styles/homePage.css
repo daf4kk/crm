@@ -11,6 +11,12 @@
   height: 127px;
 }
 
+@media only screen and (max-width: 1280px) {
+  .home-page {
+    height: 90vh !important;
+  }
+}
+
 .home-page {
   overflow-y: auto;
   overflow-x: hidden;
@@ -36,13 +42,15 @@
   font-weight: 700;
   line-height: 32px;
   color: #1C1C1E;
+  width: 300px;
 }
 
-.home-page .page-sub-title {
+.home-page .sub-title {
   margin-top: 16px;
   font-size: 20px;
   font-weight: 500;
   line-height: 24px;
+  width: 300px;
 }
 
 .home-page .news-content {
@@ -51,7 +59,12 @@
   font-size: 20px;
   font-weight: 500;
   line-height: 24px;
+  width: 95%;
   word-break: break-word;
+}
+
+.home-page .news-content .link {
+  color: #002BC5;
 }
 
 .home-page ::-webkit-scrollbar-thumb {

@@ -1,22 +1,81 @@
 body {
+  overflow-y: hidden;
   overflow-x: hidden;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
 }
 
-body::-webkit-scrollbar {
-  width: 6px;
+@media only screen and (max-width: 1280px) {
+  header {
+    width: 1280px !important;
+  }
+  .navigation {
+    height: 90vh !important;
+  }
+  .navigation .open-icon {
+    margin-left: 20px !important;
+  }
+  .navigation .settings-items {
+    margin-left: 20px !important;
+  }
+  .page-container {
+    width: 1280px !important;
+  }
+  .container {
+    width: 1280px !important;
+  }
+  .container .content {
+    width: 100% !important;
+  }
 }
 
-#root {
-  width: 1440px;
-  margin: 0 auto;
+@media only screen and (max-width: 1024px) {
+  header {
+    width: 1024px !important;
+  }
+  .navigation {
+    height: 90vh !important;
+  }
+  .navigation .open-icon {
+    margin-left: 10px !important;
+  }
+  .navigation .settings-items {
+    margin-left: 10px !important;
+  }
+  .page-container {
+    width: 1024px !important;
+  }
+  .container {
+    width: 1024px !important;
+  }
+  .container .content {
+    width: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    width: 768px !important;
+  }
+  .page-container {
+    width: 768px !important;
+  }
+  .navigation {
+    display: none;
+  }
+  .container {
+    width: 768px !important;
+  }
+  .container .content {
+    width: 100% !important;
+  }
 }
 
 .page-container {
   width: 1440px;
   height: 1024px;
+  margin: 0 auto;
 }
 
 header {
@@ -99,12 +158,22 @@ header .header-profile .profile-data h3:nth-child(2) {
   display: flex;
 }
 
+.container .navigation::-webkit-scrollbar {
+  width: 0;
+}
+
 .container .navigation {
+  overflow-y: auto;
+  overflow-x: hidden;
   margin: 0;
   width: 300px;
   height: 944px;
   -webkit-box-shadow: 0px 0px 5px rgba(2, 0, 96, 0.25);
           box-shadow: 0px 0px 5px rgba(2, 0, 96, 0.25);
+}
+
+.container .navigation ul {
+  overflow-x: hidden;
 }
 
 .container .navigation .title {
@@ -130,8 +199,7 @@ header .header-profile .profile-data h3:nth-child(2) {
 
 .container .navigation ul {
   height: 850px;
-  overflow-y: scroll;
-  overflow-x: hidden;
+  overflow-y: auto;
   margin-top: 32px;
   list-style-type: none;
   padding: 0;
