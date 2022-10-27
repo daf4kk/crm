@@ -6,6 +6,3 @@ export const store = configureStore({
     },
     middleware: getDefaultWiddleWare => getDefaultWiddleWare().concat(dadataApi.middleware)
 })
-
-
-// export type RootState = ReturnType<typeof store.getState>   //Для удобства работы с данными в store

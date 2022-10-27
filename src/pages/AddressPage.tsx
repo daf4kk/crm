@@ -9,7 +9,6 @@ const AddressPage = () => {
     
 
     const [query, setQuery] = useState<string>('');
-    // const [fetchAddresses, {data:addresses, isLoading, isError}] = useLazyFetchAddressesQuery()
     const [fetchAddresses, {data:addresses, isLoading,isError}] = useFetchAddressesMutation()
     const changeHandler = (e:React.ChangeEvent<HTMLInputElement>) =>{
         setQuery(e.target.value)
@@ -56,20 +55,6 @@ const AddressPage = () => {
                             </li>
                         )
                     })}     
-                    {/* <li className='response-item'>Мама мама мама мама</li>
-                    <li className='response-item'>Мама мама мама мама</li>
-                    <li className='response-item'>Мама мама мама мама</li>
-                    <li className='response-item'>Мама мама мама мама</li>
-                    <li className='response-item'>Мама мама мама мама</li>
-                    <li className='response-item'>Мама мама мама мама</li>
-                    <li className='response-item'>Мама мама мама мама</li>
-                    <li className='response-item'>Мама мама мама мама</li>
-                    <li className='response-item'>Мама мама мама мама</li>
-                    <li className='response-item'>Мама мама мама мама</li>
-                    <li className='response-item'>Мама мама мама мама</li>
-                    <li className='response-item'>Мама мама мама мама</li>
-                    <li className='response-item'>Мама мама мама мама</li>
-                    <li className='response-item'>Мама мама мама мама</li> */}
                 </ul>
             </div>
 

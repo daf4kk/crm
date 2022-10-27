@@ -81,13 +81,11 @@ const PageContainer:React.FC<Props> = ({children}) => {
                         <img src = {widgetsIcon} alt = 'widgets'></img>
                         <p>Виджеты</p>
                     </li>
-                    {/* .active */}
                     <div className='item nav-item settings' onClick = {settingsHandler}>
                         <img src = {settingsIcon} alt = ''></img>
                         <p>Настройки</p>
                         <img src = {openSettingsIcon} alt = 'open' className='open-icon'></img>
                     </div>   
-                    {/*  */}
                     <div className='settings-items'>
                         <li className='item settings-item profile-settings'>
                             <img src = {userSettingIcon} alt = 'widgets'></img>

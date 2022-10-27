@@ -152,7 +152,7 @@ header .header-profile .profile-data h3:nth-child(2) {
   position: absolute;
   top: 80px;
   width: 1440px;
-  height: 944px;
+  height: 770px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -167,7 +167,7 @@ header .header-profile .profile-data h3:nth-child(2) {
   overflow-x: hidden;
   margin: 0;
   width: 300px;
-  height: 944px;
+  height: 770px;
   -webkit-box-shadow: 0px 0px 5px rgba(2, 0, 96, 0.25);
           box-shadow: 0px 0px 5px rgba(2, 0, 96, 0.25);
 }
@@ -257,6 +257,6 @@ header .header-profile .profile-data h3:nth-child(2) {
 .container .content {
   overflow-y: hidden;
   width: 1140px;
-  height: 944px;
+  height: 772px;
 }
 /*# sourceMappingURL=pageContainer.css.map */

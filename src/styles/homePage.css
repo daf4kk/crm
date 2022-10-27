@@ -20,7 +20,7 @@
 .home-page {
   overflow-y: auto;
   overflow-x: hidden;
-  height: 944px;
+  height: 770px;
   background: #E5E5E5;
   margin: 0;
   padding: 0;
@@ -32,7 +32,6 @@
       -ms-flex-direction: column;
           flex-direction: column;
   padding-left: 32px;
-  /* width */
 }
 
 .home-page .page-title {

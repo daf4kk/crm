@@ -43,9 +43,7 @@
 @media only screen and (max-width:768px){
     
     .address-page{
-        // width: 100% !important;
         form{
-            // width: 100% !important;
             input{
                 width: 58% !important;
             }
@@ -69,7 +67,6 @@
     overflow: hidden;
 }
 .address-page{
-    // width: 100%;
     width: 1140px;
     margin-left: 32px;
     .title{
@@ -78,7 +75,6 @@
         font-size: 26px;
         font-weight: 700;
         line-height: 31px;
-        // width: 300px;
         display: inline-block;
     }
     .sub-title{
@@ -138,17 +134,6 @@
             }
         }
     }
-    // .response-container{
-    //     height: 60vh !important;
-    //     width: 90% !important;
-    //     ul{
-    //         width: 95% !important;
-    //         height: 80% !important;
-    //         li{
-    //             width: 100% !important;
-    //         }
-    //     }
-    // }
     .response-container{
         margin-top: 32px;
         margin-bottom: 32px;
@@ -156,7 +141,6 @@
         box-shadow: 0px 2px 8px rgba(2, 0, 97, 0.25);
         border-radius: 10px;
         height: 510px;
-        // background-color: red;
         padding-left: 24px;
         padding-top: 24px;
         h1{
@@ -168,13 +152,6 @@
         ul::-webkit-scrollbar {
             width: 0px;
         }
-        //ul{
-            //         width: 95% !important;
-            //         height: 80% !important;
-            //         li{
-            //             width: 100% !important;
-            //         }
-            //     }
         ul{
             margin-bottom: 32px;
             overflow-y: auto;
